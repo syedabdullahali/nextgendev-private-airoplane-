@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    height: 100vh;
+      
+    background: linear-gradient(black,rgba(1, 40, 85, 0.822),white);
+
+    
+    overflow-x: hidden;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+    
+
+
+
+#city{
+   width: 100vw;
+   height: 50vh;
+
+   position: relative;
+   top:10%;
+
+   z-index: -1;
+
+}
+
+
+
+#city img{
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top:78%;
+    left: 40%;
+
+    transform: translate(-50% ,-50%);
+}
+img{
+    margin-left: 10%;
+}
+
+#airoplane{
+    height: 50px;
+    width: 300px;
+
+    position: relative;
+   
+    background:linear-gradient(  bisque,white);
+
+    border-radius: 50% 50% 50% 50%;
+
+     animation-name: air;
+     animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 30s;
+ 
+        left: 70%;
+
+
+      z-index: 8;
+
+}
+
+
+@keyframes air{
+
+0%{
+
+    transform: rotate(5deg) rotateY(0deg);
+    left: 120%;
+   
+}
+
+
+50%{
+    left: -40%;
+}
+
+
+
+100%{
+    transform: rotate(5deg) rotateY(180deg);
+    left: 140%;
+
+}
+
+
+
+
+
+}
+
+
+.box1{
+    height: 30%;
+    width: 30%;
+
+    position: absolute;
+    top:15%;
+    left: 5%;
+
+    background-color:aqua;
+    border: 5px solid white;
+    border-radius: 50% 0% 0% 20%;
+
+}
+
+.box2{
+    height: 30%;
+    width: 10px;
+
+    position: absolute;
+    top:15%;
+    left: 25%;
+
+    background-color:aqua;
+    border: 5px solid white;
+}
+.box3{
+    height: 30%;
+    width: 10px;
+
+    position: absolute;
+    top:15%;
+    left: 35%;
+
+    background-color:aqua;
+    border: 5px solid white;
+}
+.box4{
+    height: 30%;
+    width: 10px;
+
+    position: absolute;
+    top:15%;
+    left: 40%;
+
+    background-color:aqua;
+    border: 5px solid white;
+}
+
+.box5{
+height:30px ;
+width: 20px;
+
+position: absolute;
+top:15%;
+left: 45%;
+
+border: 5px solid white;
+
+background-color: blanchedalmond;
+
+}
+
+.box6{
+    height: 30%;
+    width: 10px;
+
+    position: absolute;
+    top:15%;
+    left: 55%;
+
+    background-color:aqua;
+    border: 5px solid white;
+}
+.box7{
+    height: 30%;
+    width: 10px;
+
+    position: absolute;
+    top:15%;
+    left: 60%;
+
+    background-color:aqua;
+    border: 5px solid white;
+}
+.box8{
+   
+    position: absolute;
+    top:15%;
+    left: 67%;
+
+    font-size: 9px;
+    color: rgb(226, 29, 29);
+}
+
+.airoplane-backside{
+    height: 60px;
+    width: 50px;
+
+    background:linear-gradient(  bisque,white);
+
+    position: absolute;
+    left: 88%;
+
+    clip-path: polygon(0% 40%,25% 40%,50% 0%,85% 0%,85% 70%,0% 70%);
+}
+
+.airoplane-backside img{
+   
+    padding-left: -20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+#airoplane:after{
+
+    content: "";
+
+    height: 90px;
+    width: 40px;
+
+
+    position: absolute;
+    left: 40%;
+    top:30px;
+
+    background:linear-gradient(  bisque,white);
+    transform: skewx(35deg) rotatey( 26deg);
+    
+}
+#airoplane:before{
+
+    content: "";
+
+    height: 70px;
+    width: 50px;
+
+
+    position: absolute;
+    left: 5%;
+    top:25px;
+
+    background:linear-gradient( white,bisque);
+
+
+    transform: skewx(-55deg) translatey(-75px) rotatey( 26deg) ;
+
+ 
+    
+}
+
+#light{
+    background-color: rgb(255, 255, 255);
+
+    height: 15px;
+    width: 15px;
+
+    position: relative;
+    top:30%;
+    left: 40%;
+
+    border-radius: 50%;
+
+   animation-name: light;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-duration: 1s;
+
+}
+
+@keyframes light{
+
+0%{
+    background-color: rgb(255, 255, 255);
+
+}
+25%{
+    background-color: red;
+
+}
+75%{
+
+    background-color: rgb(255, 255, 255);
+
+
+}
+100%{
+    background-color: red;
+}
+
+}
+
+
+/* 1000px */
+
+
+
+@media(max-width:1000px){
+   
+    #city img{
+        height: 100%;
+        width: 100%;
+    
+        top:78%;
+        left: 40%;
+    
+        transform: translate(-50% ,-50%);
+    }
+    img{
+        margin-left: 10%;
+    }
+    
+    #airoplane{
+        height: 25px;
+        width: 150px;
+     
+        left: 70%;        
+    }
+     
+    .box1{
+        height: 15%;
+        width: 15%;
+    
+     
+        top:15%;
+        left: 5%;    
+    }
+    
+    .box2{
+        height: 15%;
+        width: 5px;
+        
+        top:15%;
+        left: 25%;       
+    }
+    .box3{
+        height: 15%;
+        width: 5px;
+         
+        top:15%;
+        left: 35%;      
+    }
+    .box4{
+        height:15%;
+        width: 5px;
+          
+        top:15%;
+        left: 40%;
+    }
+    
+    .box5{
+    height:10px;
+    width: 5px;
+   
+    top:15%;
+    left: 45%;    
+    }
+    
+    .box6{
+        height: 15%;
+        width: 5px;
+        
+        top:15%;
+        left: 55%;   
+    }
+    .box7{
+        height: 15%;
+        width: 5px;
+    
+        top:15%;
+        left: 60%;
+     
+    }
+    .box8{
+             
+        top:15%;
+        left: 75%;
+        font-size: 4px;
+         
+    }
+    
+    .airoplane-backside{
+        height: 30px;
+        width: 25px;
+    
+        left: 88%;
+    
+        clip-path: polygon(0% 40%,25% 40%,50% 0%,85% 0%,85% 70%,0% 70%);
+    }
+    
+    .airoplane-backside img{
+       
+        padding-left: -20px;
+        padding-top: 10px;
+    }
+    
+      
+    #airoplane:after{
+    
+        height: 45px;
+        width: 20px;
+    
+        left: 40%;
+        top:15px;
+       
+    }
+    #airoplane:before{
+    
+  
+    
+        height: 35px;
+        width: 25px;
+    
+    
+        left: 5%;
+        top:15.5px;
+    
+        transform: skewx(-55deg) translatey(-45px) rotatey( 26deg) ;
+        
+    }
+    
+    #light{
+ 
+        height: 7.5px;
+        width: 7.5px;
+    
+      
+    
+    }
+}
